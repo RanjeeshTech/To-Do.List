@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+.instructions li{
+    padding:0px;
+    cursor:initial;
+}
+.instructions #tick{
+    list-style-image: url('./assets/tick2.png');
+}
+li{
+    cursor: pointer;
+    list-style-image: url('./assets/cross2.png');
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.instructions{    
+    width:60%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.623);
+    margin-top: 100px;
+    border-radius:7px;
+    padding:15px;
+    display: none;
+}
+hr{
+    margin-bottom:4px;
+}
+button{
+    cursor: pointer;
+}
+header{
+    position: fixed;
+}
+header,footer{    
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0,0,0,0.2);
+    color:white;
+    padding:10px;
+    font-size: 18px;
+}
+footer{
+    margin-top:280px;
+}
+body{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-attachment: fixed;
+}
+.container{
+    position: relative;
+    width:30%;
+    height:auto;
+    margin:auto;  
+    top:100px;
+    text-align:center;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.623);
+    border-radius:7px;
+    padding-left:25px;
+    padding-right:25px;
+    padding-bottom:40px; 
+}
+.box1{
+    padding:20px;
+}
+.box2{
+    padding:10px;
+    border:2px solid #000000;
+    border-radius:4px;
+    background-color:rgba(0, 0, 0, 0.205);
+    font-size: 16px;
+}
+.box2 input{
+    padding:2px;
+}
+.box2 input,button,select{
+    background:rgba(0, 0, 0, 0.151);
+    border:1px solid #000000;
+    padding:2px;
+    font-size: 16px;
+}
+option { 
+    height:10px;
+    background-color: #69bff8;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3{
+    border:2px solid #000000;  
+    height:auto;
+    background-color:rgba(0, 0, 0, 0.205);
+    margin-top: 50px;
+    font-size:18px;
+    line-height: 24px;
+    border-radius:4px;
+    padding-top:0px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:4px;
+    grid-auto-rows: auto;
+}
+.box4{
+    border:2px solid #000000;  
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.205);
+    margin-top: 50px;
+    font-size:18px;
+    border-radius:4px;
+    padding:10px;
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.box3 h3{
+    padding:10px;
+}
+.tasks{
+    display: flex;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom:40px;
+    left:70px;
+}
+.bottom-right{
+    position: absolute;
+    bottom:340px;
+    right:0;
+}
+.box4{
+    display: flex;
+    justify-content: space-around;
+}
+.box4 button{
+    font-size: 16px;
+    padding:2px;
+}
+
+@media screen and (max-width:1299px){
+    .bottom-right{
+        width:26%;
+        margin-bottom: -24px;
+    }
+}   
+@media screen and (max-width:1239px){
+    .container{
+        width:44%;
+        top:120px;
+    }
+    .bottom-left{
+        width:25%;
+    }
+    .bottom-right{
+        width:26%;
+        margin-bottom: -20px;
+    }
+}
+@media screen and (max-width:989px){
+    .container{
+        width:47%;
+        top:40px;
+    }
+    .bottom-left{
+        display: none;
+    }
+    .bottom-right{
+        display: none;
+    }
+    .instructions{
+        display: block;
+    }
+    .instructions{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width:899px){
+    .container{
+        width:45%;
+        font-size:12px;
+    }
+    .instructions{
+        width: 45%;
+    }
+}
+@media screen and (max-width:759px){
+    .container{
+        width:50%;
+        font-size:12px;
+    }
+    .instructions{
+        width: 50%;
+    }
+}
+@media screen and (max-width:699px){
+    .container{
+        width:60%;
+        font-size:12px;
+    }
+    footer{
+        margin-top:100px;
+    }
+    .instructions{
+        width: 60%;
+    }
+}
+@media screen and (max-width:599px){
+    .container{
+        width:70%;
+    }
+    header,footer{
+        font-size: 16px;
+    }
+    .instructions{
+        width: 70%;
+    }
+}
+@media screen and (max-width:389px){
+    .container{
+        width:84%;
+    }
+    header,footer{
+        font-size: 14px;
+    }
+    .instructions{
+        width: 84%;
+    }
+}
+@media screen and (max-width:324px){
+    .container{
+        width:88%;
+    }
+    .instructions{
+        width: 88%;
+    }
+}
+@media screen and (max-width:309px){
+    input,button,select{
+        width:80%;
+    }
+    .box4 button{
+        margin:2px;
+        font-size: 14px;
+    }
+    .instructions{
+        width: 80%;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <span>            
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+              </svg><b> Prioritorized To-Do List: </b></p>            
+        </span>   
+        <div>
+            <p>Helps you stay organised</p>
+        </div>             
+    </header>
+    <div class="bottom-left">
+        <img src="./assets/img1.png" alt="" width="70%">
+    </div>
+    <div class="bottom-right">
+        <img src="./assets/img1.png" alt="" width="80%">
+    </div>
+    <div class="instructions">
+        <h3>To-Do List Instructions</h3>
+        <li>Click the task once to complete the task</li>
+        <li id="tick">Click the task again to delete it</li>
+    </div>
+    <div class="container">
+        <div class="box1">
+            <h2>TO-DO LIST</h2>
+        </div>
+        <div class="box2">
+            Task Details: <input type="text" id="newtask"> 
+            <br><br>
+            <select name="" id="mySelect" onchange="changecolor()">
+                <option value="select" selected disabled>Select Priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <br><br>
+            <button id="addtasks">Save task</button>
+        </div>  
+        <div class="tasks">
+            <div class="box3">
+                <h3>
+                    TASKS
+                </h3>
+                <hr>
+                <div id="incomplete_tasks">
+                  <ul id="all_tasks">
+                    
+                  </ul>
+                </div>
+            </div>
+            <div class="box4">
+                <button onclick="lowtasks()">Low</button>
+                <button onclick="mediumtasks()">Medium</button>
+                <button onclick="hightasks()">High</button>
+                <button onclick="alltasks()">All</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>            
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+              </svg><b> Prioritorized To-Do List: </b></p>            
+        </span>   
+        <div>
+            <p>Helps you stay organised</p>
+        </div>             
+    </footer>
+</body>
+</html>
